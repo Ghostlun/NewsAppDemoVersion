@@ -1,56 +1,47 @@
 # MyNewsApp
 this is my MyNewsApp
+<h4>App Information </h4>
+It is NewsApp Demo applications. It is composed of total 4 Sceens, \n
+It follows MVVM Pattern
+User can check recents news, serach other news based on keyword and timelines, and contact to Customer Service Deirectly
 
-<div><b> Rapid API Used to get Data<b></div>
-https://rapidapi.com/contextualwebsearch/api/web-search?endpoint=apiendpoint_b8b43008-dd94-4b86-8fd0-26d70a4e870b  
+<h3>API</h3>
+<div><b> Rapid Web serach API is provided for serach news functions, and spacelight api for recetns Data  <b></div>
+https://rapidapi.com/contextualwebsearch/api/web-search?endpoint=apiendpoint_b8b43008-dd94-4b86-8fd0-26d70a4e870b 
+https://test.spaceflightnewsapi.net/api/v2/
+  
+<h3>Technique</h3>
+<p>- MVVM pattern</p>
+<p>- Network Layer</p>
+<p>- UIKit</p>
+<p>- DropDown Library</p>
+<p><br></p>
 
-
-Final Outputs of MyNewsApp
+<h3>Screen Explanation</h3>
 
 [Recents News Screen]
+<div> It displays Article Summery. This is composed of collection view and table view. Collection view display recents news from API. Table view display keyword search by taylor swift</div>
 
 <img src = "https://github.com/Ghostlun/NewsAppDmo/blob/master/NewsDemo/Github%20source/firstScreen.gif" width = 200 height = 410/>
 
 [Details Screen]
+<div>This is a detail Screen. Once users click your expected article, user can see whole artilce informations. User can adjust text size using Zoom-In and Zoom-out button. Also, on the top right navigation items, user can report article and share article address</div>
 
 <img src = "https://github.com/Ghostlun/NewsAppDmo/blob/master/NewsDemo/Github%20source/detailsScreen.gif" width = 200 height = 410/>
 
 
 [Search News Screen]
 
+<div>This is a Search Screen. User can search the article which they want to know. Article is search by keyword basically. Also, user can apply additional search options. The options are numbers of article and specific timelines</div>
+
 <img src = "https://github.com/Ghostlun/NewsAppDmo/blob/master/NewsDemo/Github%20source/secondScreen.gif" width = 200 height = 410/>
 
 [Contact Information Screen]
 
-<img src = "https://github.com/Ghostlun/NewsAppDmo/blob/master/NewsDemo/Github%20source/thirdScreen.gif" width = 200 height = 410/>
+<div>This is a Contact Information Screen. User can send email, send message, and call to the Customers.</div>
 
 
 
 
-Today, I researched some APIs which is suitable for News App, and attached swfitlint. file into the build phase. 
-Currently, I am correcting Swift grammars. Based on this WebSearch API, I will develop a News App.
 
-4/11 API Connections
-To Create models for each data. 
-1. Use structs
-2. For snake casing, we use enum Codingkeys: String, Codingkey.
-
-4/12 News View Updates
-1. News navgation view updated
-2. News tableView view and header updated
-3. News collection View updated (Still constraints issues)
-
-4/18 Updates : MVVM Pattern updates
-Task Implemented:
-Getting news data with images from the API.
-Developing three screens, there are main screen, details screen, search bar screen.
-The main screen displays the News title, publication, and thumbnails image.
-The detail screen displays the details of news information. This view is scrollable.
-The search screen makes that users can search keywords with detailed search options
-Display News using the collection and table view.
-MVVM Patterns for collection and table
-Task needs to be implemented:
-Better UI design,
-Add more accurate functionally with UI.
-Develop share action sheets IOS.
 
