@@ -2,7 +2,7 @@
 <img align="left" src = "https://github.com/Ghostlun/NewsAppDemoVersion/blob/master/NewsDemo/Resources/Github%20source/icons8-news-100%20(2).png" width = 30 height = 30/> This is my NewsAppDemoVersion
 
 <h4>App Information </h4>
-It is NewsApp Demo applications. It is composed of total 4 Sceens, \n
+It is NewsApp Demo applications. It is composed of total 4 Sceens
 It follows MVVM Pattern
 User can check recents news, serach other news based on keyword and timelines, and contact to Customer Service Deirectly
 
