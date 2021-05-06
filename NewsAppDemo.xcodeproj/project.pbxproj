@@ -457,6 +457,7 @@
 		D9E6E4EA261EB42D0072CC88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D909C782264284CB00713750 /* Github source */,
 				D96CBDEF262566F200BE5712 /* Font */,
 				D9E6E4DE261EB3F70072CC88 /* Assets.xcassets */,
 				D92AC3AB2631624A0023BFF4 /* TermsAndService.txt */,
@@ -467,7 +468,6 @@
 		D9E6E4EB261EB4330072CC88 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				D909C782264284CB00713750 /* Github source */,
 				D9E6E4DB261EB3F40072CC88 /* Main.storyboard */,
 				D9E6E4E0261EB3F70072CC88 /* LaunchScreen.storyboard */,
 			);
