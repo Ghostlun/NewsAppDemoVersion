@@ -18,9 +18,9 @@ class NewsTableViewCell: UITableViewCell, CellReusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        newsThumbnailsImageView.makeRoundRectangle()
-        categoryButton.makeRoundRectangle()
-        categoryButton.addPadding()
+        newsThumbnailsImageView.makeRoundRectangleImageView(cornerRadius: 10)
+        categoryButton.makeRoundRectangle(cornerRadius: 10)
+        categoryButton.addPaddingWith(topInset: 3, leftInset: 3, bottomInset: 3, rightInset: 3)
     }
     
     func configure(data: NewsTableViewCellDelegate) {

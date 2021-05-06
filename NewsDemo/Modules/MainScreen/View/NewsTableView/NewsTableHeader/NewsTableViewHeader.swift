@@ -18,10 +18,10 @@ class NewsTableViewHeader: UITableViewHeaderFooterView, CellReusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        showMoreButton.makeRoundRectangle()
+        showMoreButton.makeRoundRectangle(cornerRadius: 10)
         self.backgroundColor = .white
         self.layer.backgroundColor = UIColor.white.cgColor
-        self.showMoreButton.addPadding()
+        self.showMoreButton.addPaddingWith(topInset: 3, leftInset: 3, bottomInset: 3, rightInset: 3)
     }
     
     weak var delegate: NewsTableViewHeaderDelegates?

@@ -20,7 +20,7 @@ class DetailsView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.mainImage.makeRoundRectangle()
+        self.mainImage.makeRoundRectangleImageView(cornerRadius: 10)
     }
     
     func configure(viewModel: DetailsViewModelDelegate) {

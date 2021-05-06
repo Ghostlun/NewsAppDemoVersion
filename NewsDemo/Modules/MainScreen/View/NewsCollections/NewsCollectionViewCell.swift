@@ -14,7 +14,7 @@ class NewsCollectionViewCell: UICollectionViewCell, CellReusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.makeRoundRectangle()
+        imageView.makeRoundRectangleImageView(cornerRadius: 10)
     }
     
     func configure(data: NewsCollectionViewModel) {
