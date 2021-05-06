@@ -1,7 +1,5 @@
 # MyNewsApp
-this is my MyNewsApp
-<br></br>
-<img src = "https://github.com/Ghostlun/NewsAppDemoVersion/blob/master/NewsDemo/Resources/Github%20source/icons8-news-100%20(2).png" width = 30 height = 30/>
+<img align="left" src = "https://github.com/Ghostlun/NewsAppDemoVersion/blob/master/NewsDemo/Resources/Github%20source/icons8-news-100%20(2).png" width = 30 height = 30/> This is my NewsAppDemoVersion
 
 <h4>App Information </h4>
 It is NewsApp Demo applications. It is composed of total 4 Sceens, \n
