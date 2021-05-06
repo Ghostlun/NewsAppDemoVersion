@@ -39,10 +39,10 @@ class DetailNewsViewController: UIViewController {
         menu.selectionAction = { index, _ in
             switch index {
             case 0:
-                self.showActivity()
+                self.reportNewsArticle()
                 
             case 1:
-                self.reportNewsArticle()
+                self.showActivity()
 
             default:
                 break
