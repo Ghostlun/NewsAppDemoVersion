@@ -10,7 +10,7 @@ import UIKit
 class AgreementController: UIViewController {
     
     @IBOutlet private var agreementView: UIView!
-    lazy var mailHandler = MailHandler(presenting: self)
+    lazy var mailHandler = ContactFunctionHandler(presenting: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()

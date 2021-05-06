@@ -17,7 +17,7 @@ class AgreementView: UIView {
     }
     
     @IBAction private func callCustomerService() {
-        let callHandler = CallHandler()
+        let callHandler = ContactFunctionHandler(presenting: self)
         callHandler.call(number: "334-306-0847")
     }
 }

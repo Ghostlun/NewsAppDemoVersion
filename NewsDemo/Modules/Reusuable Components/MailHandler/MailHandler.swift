@@ -8,14 +8,18 @@
 import MessageUI
 import UIKit
 
-class MailHandler: NSObject {
+class ContactFunctionHandler: NSObject {
     
     private weak var controller: UIViewController?
-        
+    private weak var view: UIView?
+
     init(presenting controller: UIViewController) {
         self.controller = controller
     }
     
+    init(presenting view: UIView) {
+        self.view = view
+    }
     func sendMailWith(recipient: [String], messageBody: String, subject: String) -> MFMailComposeViewController {
         guard MFMailComposeViewController.canSendMail() else {
             return MFMailComposeViewController()
@@ -38,8 +42,16 @@ class MailHandler: NSObject {
         controller.body = "Message"
         return controller
     }
+    
+    func call(number: String) {
+       let number = number
+       guard let url = URL(string: "TEL://\(number)") else { return }
+       if UIApplication.shared.canOpenURL(url) {
+           UIApplication.shared.open(url, options: [:], completionHandler: nil)
+       }
+   }
 }
-extension MailHandler: MFMailComposeViewControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
+extension ContactFunctionHandler: MFMailComposeViewControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }

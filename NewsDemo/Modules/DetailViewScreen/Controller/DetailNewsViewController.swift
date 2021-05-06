@@ -27,7 +27,7 @@ class DetailNewsViewController: UIViewController {
     }()
  
     var newsData: Value?
-    lazy var mailViewModel = MailHandler(presenting: self)
+    lazy var mailViewModel = ContactFunctionHandler(presenting: self)
     lazy var detailsViewModel = DetailsViewModel(data: newsData)
     
     override func viewDidLoad() {
